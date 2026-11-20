@@ -1,0 +1,21 @@
+{
+  "body": {
+    "customer": "Caio",
+    "days": 2,
+    "due": "17/01/2024",
+    "id": 4,
+    "movie_id": 1,
+    "start": "15/01/2024",
+    "total": 19.8
+  },
+  "body_kind": "json",
+  "headers": {
+    "content-type": "application/json",
+    "location": null
+  },
+  "request": {
+    "method": "POST",
+    "path": "/rentals"
+  },
+  "status": 201
+}

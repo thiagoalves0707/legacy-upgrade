@@ -1,0 +1,15 @@
+{
+  "body": {
+    "error": "invalid rental"
+  },
+  "body_kind": "json",
+  "headers": {
+    "content-type": "application/json",
+    "location": null
+  },
+  "request": {
+    "method": "POST",
+    "path": "/rentals"
+  },
+  "status": 422
+}

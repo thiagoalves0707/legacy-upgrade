@@ -1,0 +1,19 @@
+{
+  "body": {
+    "available": true,
+    "daily_price": 9.9,
+    "id": 1,
+    "released": "30/08/2002",
+    "title": "Cidade de Deus"
+  },
+  "body_kind": "json",
+  "headers": {
+    "content-type": "application/json",
+    "location": null
+  },
+  "request": {
+    "method": "GET",
+    "path": "/movies/1"
+  },
+  "status": 200
+}

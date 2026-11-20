@@ -1,0 +1,21 @@
+{
+  "body": {
+    "customer": "Ana",
+    "days": 3,
+    "due": "18/01/2024",
+    "id": 1,
+    "movie_id": 2,
+    "start": "15/01/2024",
+    "total": 22.5
+  },
+  "body_kind": "json",
+  "headers": {
+    "content-type": "application/json",
+    "location": null
+  },
+  "request": {
+    "method": "POST",
+    "path": "/rentals"
+  },
+  "status": 201
+}

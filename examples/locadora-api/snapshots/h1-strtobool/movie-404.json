@@ -1,0 +1,15 @@
+{
+  "body": {
+    "error": "not found"
+  },
+  "body_kind": "json",
+  "headers": {
+    "content-type": "application/json",
+    "location": null
+  },
+  "request": {
+    "method": "GET",
+    "path": "/movies/99"
+  },
+  "status": 404
+}

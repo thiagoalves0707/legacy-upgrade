@@ -1,0 +1,12 @@
+---
+description: Rules for safely upgrading legacy code - runtime, framework and dependency version bumps in any language. Apply when the user asks to upgrade, migrate, modernize or update versions.
+alwaysApply: false
+---
+
+Follow the rules in `legacy-upgrade/adapters/RULES.md` (copy its content here if the
+skill folder is not in this repository).
+
+Summary: green tests are not proof. Snapshot behavior before changing anything,
+upgrade one hop at a time, compare against the original baseline after every hop,
+never weaken tests, log every workaround in MIGRATION_REPORT.md, and finish with
+"Ready for human verification" plus a manual end-to-end checklist - never "done".

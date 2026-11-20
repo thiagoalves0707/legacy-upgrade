@@ -1,0 +1,24 @@
+{
+  "body": {
+    "count": 1,
+    "movies": [
+      {
+        "available": false,
+        "daily_price": 12.0,
+        "id": 3,
+        "released": "05/10/2007",
+        "title": "Tropa de Elite"
+      }
+    ]
+  },
+  "body_kind": "json",
+  "headers": {
+    "content-type": "application/json",
+    "location": null
+  },
+  "request": {
+    "method": "GET",
+    "path": "/movies?available=false"
+  },
+  "status": 200
+}

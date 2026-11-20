@@ -1,0 +1,21 @@
+{
+  "body": {
+    "customer": "Cláudia",
+    "days": 2,
+    "due": "01/03/2024",
+    "id": 3,
+    "movie_id": 1,
+    "start": "28/02/2024",
+    "total": 19.8
+  },
+  "body_kind": "json",
+  "headers": {
+    "content-type": "application/json",
+    "location": null
+  },
+  "request": {
+    "method": "POST",
+    "path": "/rentals"
+  },
+  "status": 201
+}

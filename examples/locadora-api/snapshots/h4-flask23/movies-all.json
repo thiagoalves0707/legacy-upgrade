@@ -1,0 +1,45 @@
+{
+  "body": {
+    "count": 4,
+    "movies": [
+      {
+        "available": true,
+        "daily_price": 9.9,
+        "id": 1,
+        "released": "30/08/2002",
+        "title": "Cidade de Deus"
+      },
+      {
+        "available": true,
+        "daily_price": 7.5,
+        "id": 2,
+        "released": "03/04/1998",
+        "title": "Central do Brasil"
+      },
+      {
+        "available": false,
+        "daily_price": 12.0,
+        "id": 3,
+        "released": "05/10/2007",
+        "title": "Tropa de Elite"
+      },
+      {
+        "available": true,
+        "daily_price": 8.25,
+        "id": 4,
+        "released": "10/09/2000",
+        "title": "O Auto da Compadecida"
+      }
+    ]
+  },
+  "body_kind": "json",
+  "headers": {
+    "content-type": "application/json",
+    "location": null
+  },
+  "request": {
+    "method": "GET",
+    "path": "/movies"
+  },
+  "status": 200
+}

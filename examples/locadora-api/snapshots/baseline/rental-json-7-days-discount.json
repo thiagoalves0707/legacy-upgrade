@@ -1,0 +1,21 @@
+{
+  "body": {
+    "customer": "Bruno",
+    "days": 7,
+    "due": "22/01/2024",
+    "id": 2,
+    "movie_id": 4,
+    "start": "15/01/2024",
+    "total": 51.98
+  },
+  "body_kind": "json",
+  "headers": {
+    "content-type": "application/json",
+    "location": null
+  },
+  "request": {
+    "method": "POST",
+    "path": "/rentals"
+  },
+  "status": 201
+}

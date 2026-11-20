@@ -1,0 +1,117 @@
+{
+  "defaults": {
+    "compare_headers": [
+      "content-type",
+      "location"
+    ]
+  },
+  "cases": [
+    {
+      "name": "movies-all",
+      "path": "/movies"
+    },
+    {
+      "name": "movies-available-yes",
+      "path": "/movies?available=yes"
+    },
+    {
+      "name": "movies-available-false",
+      "path": "/movies?available=false"
+    },
+    {
+      "name": "movies-available-invalid",
+      "path": "/movies?available=talvez"
+    },
+    {
+      "name": "movie-1",
+      "path": "/movies/1"
+    },
+    {
+      "name": "movie-404",
+      "path": "/movies/99"
+    },
+    {
+      "name": "movie-non-int",
+      "path": "/movies/abc"
+    },
+    {
+      "name": "rental-json-3-days",
+      "method": "POST",
+      "path": "/rentals",
+      "body": {
+        "movie_id": 2,
+        "days": 3,
+        "customer": "Ana"
+      },
+      "ignore": [
+        "$.id"
+      ]
+    },
+    {
+      "name": "rental-json-7-days-discount",
+      "method": "POST",
+      "path": "/rentals",
+      "body": {
+        "movie_id": 4,
+        "days": 7,
+        "customer": "Bruno"
+      },
+      "ignore": [
+        "$.id"
+      ]
+    },
+    {
+      "name": "rental-leap-year",
+      "method": "POST",
+      "path": "/rentals",
+      "body": {
+        "movie_id": 1,
+        "days": 2,
+        "customer": "Cláudia",
+        "start": "2024-02-28"
+      },
+      "ignore": [
+        "$.id"
+      ]
+    },
+    {
+      "name": "rental-form-encoded",
+      "method": "POST",
+      "path": "/rentals",
+      "headers": {
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
+      "body": "movie_id=1&days=2&customer=Caio",
+      "ignore": [
+        "$.id"
+      ]
+    },
+    {
+      "name": "rental-unavailable",
+      "method": "POST",
+      "path": "/rentals",
+      "body": {
+        "movie_id": 3,
+        "days": 1,
+        "customer": "Duda"
+      }
+    },
+    {
+      "name": "rental-invalid",
+      "method": "POST",
+      "path": "/rentals",
+      "body": {
+        "movie_id": 1
+      }
+    },
+    {
+      "name": "rental-malformed-json",
+      "method": "POST",
+      "path": "/rentals",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": "{movie_id: 1,"
+    }
+  ]
+}
