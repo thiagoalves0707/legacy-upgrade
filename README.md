@@ -68,3 +68,7 @@ examples/locadora-api/          worked example with report and snapshots
 - Projects without tests need characterization tests first.
 - Offline or private-registry environments need a human to confirm available versions.
 - The ecosystem notes are a starting checklist; official upgrade guides remain the source of truth.
+
+## License
+
+[MIT](LICENSE) - free to use, modify and share, including in commercial and company projects.
